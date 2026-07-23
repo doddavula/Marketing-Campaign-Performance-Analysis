@@ -1,136 +1,100 @@
 # 📊 Marketing Campaign Analytics
 
-## 📌 Project Overview
+## 📌 Projektübersicht
 
-This project is an end-to-end Marketing Campaign Analytics project developed using Python, Pandas, NumPy, Power BI, and DAX.
+Dieses Projekt ist eine End-to-End-Analyse von Marketingkampagnendaten mit **Python, Pandas, NumPy, Power BI und DAX**.
 
-The objective is to analyze marketing campaign performance across different:
+Ziel des Projekts ist die Analyse der Kampagnenperformance nach:
 
-- Marketing Channels
-- Regions
-- Products
-- Campaigns
-- Time Periods
+- Marketingkanal
+- Region
+- Produkt
+- Kampagne
+- Zeitraum
 
-The project demonstrates the complete data analytics workflow from raw data preparation to interactive business intelligence dashboards.
+Der gesamte Analyseprozess umfasst die Datenaufbereitung in Python, die Datenqualitätsprüfung, die Modellierung in Power BI, die Erstellung dynamischer DAX-Kennzahlen und die Entwicklung interaktiver Dashboards.
 
 ---
 
-## 🔄 End-to-End Workflow
+## 🔄 End-to-End-Workflow
 
 ```text
-Raw Excel Data
-      ↓
+Rohdaten
+   ↓
 Python / Pandas
-      ↓
-Data Cleaning
-      ↓
-Data Quality Validation
-      ↓
-Processed CSV Files
-      ↓
-Power BI Data Model
-      ↓
-Star Schema
-      ↓
-DAX Measures
-      ↓
-Interactive Dashboard
-      ↓
+   ↓
+Datenbereinigung
+   ↓
+Datenqualitätsprüfung
+   ↓
+Aufbereitete CSV-Dateien
+   ↓
+Power-BI-Datenmodell
+   ↓
+Star-Schema
+   ↓
+DAX-Kennzahlen
+   ↓
+Interaktives Dashboard
+   ↓
 Business Insights
+________________________________________
 🎯 Business Problem
-
-Marketing teams invest budgets across multiple campaigns and channels. However, raw marketing data does not always provide clear answers to important business questions:
-
-Which marketing channel generates the highest revenue?
-Which channel has the best CTR?
-Which campaigns generate the most conversions?
-Which regions perform best?
-Which products generate the highest revenue?
-How efficiently is the marketing budget being used?
-What is the return on marketing investment?
-
-This project addresses these questions through data preparation, data modeling, DAX calculations, and interactive Power BI dashboards.
-
-🐍 Python Data Preparation
-
-Python and Pandas were used for:
-
-Loading raw marketing data
-Exploring the dataset
-Checking data types
-Handling missing values
-Removing duplicate records
-Cleaning text fields
-Validating business rules
-Preparing data for Power BI
-Main Python Workflow
-import pandas as pd
-import numpy as np
-
-# Load data
-df = pd.read_excel("marketing_campaign.xlsx")
-
-# Inspect data
-print(df.head())
-print(df.shape)
-print(df.info())
-
-# Check missing values
-print(df.isnull().sum())
-
-# Remove duplicates
-df = df.drop_duplicates()
-
-# Convert date column
-df["Date"] = pd.to_datetime(df["Date"])
-✅ Data Quality Validation
-
-Business rules were applied to validate the marketing data.
-
-Clicks cannot exceed impressions
+Marketingteams investieren Budgets in verschiedene Kampagnen und Marketingkanäle. Rohdaten zeigen jedoch nicht immer direkt:
+•	Welcher Marketingkanal den höchsten Umsatz erzielt 
+•	Welcher Kanal die beste CTR aufweist 
+•	Welche Kampagnen die meisten Conversions generieren 
+•	Welche Regionen die beste Performance zeigen 
+•	Welche Produkte den höchsten Umsatz erzielen 
+•	Wie effizient das Marketingbudget eingesetzt wird 
+•	Wie hoch der Return on Investment ist 
+Dieses Projekt beantwortet diese Fragen mithilfe von Datenanalyse und Business Intelligence.
+________________________________________
+🐍 Python-Datenaufbereitung
+Python und Pandas wurden verwendet für:
+•	Einlesen der Rohdaten 
+•	Untersuchung des Datensatzes 
+•	Prüfung der Datentypen 
+•	Behandlung fehlender Werte 
+•	Entfernung von Duplikaten 
+•	Bereinigung von Textfeldern 
+•	Datenqualitätsprüfung 
+•	Vorbereitung der Daten für Power BI 
+Verwendete Technologien
+Python
+Pandas
+NumPy
+Jupyter Notebook
+________________________________________
+✅ Datenqualitätsprüfung
+Es wurden verschiedene Business Rules überprüft.
+Klicks dürfen nicht größer als Impressions sein
 invalid_clicks = df[
     df["Clicks"] > df["Impressions"]
 ]
-
-print("Invalid click records:", len(invalid_clicks))
-
 Business Rule:
-
 Clicks ≤ Impressions
-Conversions cannot exceed clicks
+Conversions dürfen nicht größer als Klicks sein
 invalid_conversions = df[
     df["Conversions"] > df["Clicks"]
 ]
-
-print(
-    "Invalid conversion records:",
-    len(invalid_conversions)
-)
-
 Business Rule:
-
 Conversions ≤ Clicks
-Spend cannot be negative
+Negative Ausgaben prüfen
 invalid_spend = df[
     df["Spend"] < 0
 ]
-
 Business Rule:
-
 Spend ≥ 0
-Revenue cannot be negative
+Negative Umsätze prüfen
 invalid_revenue = df[
     df["Revenue"] < 0
 ]
-
 Business Rule:
-
 Revenue ≥ 0
-⭐ Power BI Data Model
-
-The Power BI model follows a Star Schema.
-
+________________________________________
+⭐ Power-BI-Datenmodell
+Das Datenmodell wurde als Star Schema aufgebaut.
                  Dim_Date
                     │
                     │
@@ -138,32 +102,31 @@ Dim_Channel ─── Fact_Marketing ─── Dim_Product
                     │
                     │
                 Dim_Region
-Fact Table
+Faktentabelle
 Fact_Marketing
-
-The central fact table contains measurable marketing performance data:
-
-Campaign_ID
-Date
-Impressions
-Clicks
-Conversions
-Spend
-Revenue
-Dimension Tables
+Enthält messbare Marketingkennzahlen:
+•	Campaign_ID 
+•	Date 
+•	Impressions 
+•	Clicks 
+•	Conversions 
+•	Spend 
+•	Revenue 
+Dimensionstabellen
 Dim_Date
-Date
-Year
-Month
-Month Name
-Year Month
+•	Date 
+•	Year 
+•	Month 
+•	Month Name 
+•	Year Month 
 Dim_Channel
-Marketing Channel
+•	Marketing Channel 
 Dim_Region
-Region
+•	Region 
 Dim_Product
-Product
-🧮 DAX Measures
+•	Product 
+________________________________________
+🧮 DAX-Kennzahlen
 Total Impressions
 Total Impressions =
 SUM(
@@ -189,8 +152,9 @@ Total Revenue =
 SUM(
     Fact_Marketing[Revenue]
 )
-📈 CTR — Click-Through Rate
-Formula
+________________________________________
+📈 CTR – Click-Through-Rate
+Formel
 CTR = Clicks ÷ Impressions
 DAX
 CTR =
@@ -199,20 +163,10 @@ DIVIDE(
     [Total Impressions],
     0
 )
-Business Meaning
-
-CTR measures the percentage of ad impressions that resulted in clicks.
-
-For example:
-
-1,000,000 Impressions
-46,200 Clicks
-CTR = 4.62%
-
-A CTR of 4.62% means that approximately 4.62 out of every 100 impressions resulted in a click.
-
+Die CTR zeigt den prozentualen Anteil der Impressions, die zu einem Klick geführt haben.
+________________________________________
 🔄 Conversion Rate
-Formula
+Formel
 Conversion Rate =
 Conversions ÷ Clicks
 DAX
@@ -222,12 +176,10 @@ DIVIDE(
     [Total Clicks],
     0
 )
-Business Meaning
-
-Conversion Rate measures the percentage of clicks that resulted in conversions.
-
-💰 ROI — Return on Investment
-Formula
+Die Conversion Rate zeigt, wie viele Klicks zu einer Conversion geführt haben.
+________________________________________
+💰 ROI – Return on Investment
+Formel
 ROI =
 (Revenue - Spend) ÷ Spend
 DAX
@@ -237,155 +189,141 @@ DIVIDE(
     [Total Spend],
     0
 )
-Business Meaning
-
-ROI measures the profit generated compared with the marketing investment.
-
-Example
-Revenue = $500,000
-Spend   = $100,000
-ROI =
-($500,000 - $100,000)
-÷ $100,000
-ROI = 400%
-
-The DAX measure should be formatted as Percentage in Power BI.
-
-💵 CPC — Cost Per Click
-Formula
-CPC =
-Spend ÷ Clicks
-DAX
-CPC =
-DIVIDE(
-    [Total Spend],
-    [Total Clicks],
-    0
-)
-
-CPC measures the average cost of generating one click.
-
-💳 CPA — Cost Per Acquisition
-Formula
-CPA =
-Spend ÷ Conversions
-DAX
-CPA =
-DIVIDE(
-    [Total Spend],
-    [Total Conversions],
-    0
-)
-
-CPA measures the average marketing cost of generating one conversion.
-
-📊 Power BI Dashboard
+Der ROI zeigt den erzielten Ertrag im Verhältnis zur Marketinginvestition.
+________________________________________
+📊 Power-BI-Dashboard
 1️⃣ Executive Overview
-
-The first page provides a high-level summary of overall marketing performance.
-
-KPI Cards
-Total Spend
-Total Revenue
-Total Conversions
-CTR
-ROI
-Visualizations
-Monthly Revenue Trend
-Revenue by Marketing Channel
-Conversions by Region
-Slicers
-Year
-Region
-Product
-Marketing Channel
+Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
+KPIs
+•	Total Spend 
+•	Total Revenue 
+•	Total Conversions 
+•	CTR 
+•	ROI 
+Visualisierungen
+•	Monthly Revenue Trend 
+•	Revenue by Marketing Channel 
+•	Conversions by Region 
+Filter
+•	Year 
+•	Region 
+•	Product 
+•	Marketing Channel 
+________________________________________
+📸 Dashboard – Executive Overview
+________________________________________
 2️⃣ Channel & Campaign Performance
-
-This page focuses on marketing channel and campaign efficiency.
-
-Analysis
-Marketing Spend by Channel
-Revenue by Channel
-CTR by Channel
-Conversion Rate by Channel
-Campaign Performance
-Campaign Performance Table
-
-The table includes:
-
-Campaign ID
-Total Spend
-Total Revenue
-Total Clicks
-Total Conversions
-CTR
-Conversion Rate
-ROI
-
-This page helps identify the most effective marketing channels and campaigns.
-
+Diese Seite analysiert die Performance nach Marketingkanal und Kampagne.
+Analysen
+•	Marketing Spend by Channel 
+•	Revenue by Channel 
+•	CTR by Channel 
+•	Conversion Rate by Channel 
+•	Campaign Performance 
+________________________________________
+📸 Dashboard – Channel & Campaign Performance
+________________________________________
 3️⃣ Regional & Product Performance
+Diese Seite analysiert die Performance nach Region und Produkt.
+Visualisierungen
+•	Revenue by Region 
+•	Revenue by Product 
+•	Conversions by Region 
+•	Conversions by Product 
+•	Product and Region Matrix 
+Filter
+•	Year 
+•	Region 
+•	Product 
+•	Marketing Channel 
+________________________________________
+📸 Dashboard – Regional & Product Performance
+________________________________________
+💡 Business Insights
+Das Dashboard unterstützt die Beantwortung folgender Fragen:
+•	Welcher Marketingkanal erzielt den höchsten Umsatz? 
+•	Welcher Kanal hat die beste CTR? 
+•	Welche Kampagne generiert die meisten Conversions? 
+•	Welche Region erzielt die beste Performance? 
+•	Welches Produkt erzielt den höchsten Umsatz? 
+•	Welche Kanäle haben den besten ROI? 
+•	Welche Kampagnen sollten optimiert werden? 
+________________________________________
+💼 Interview-Zusammenfassung
+Ich habe ein End-to-End-Projekt zur Analyse von Marketingkampagnen mit Python, Pandas, Power BI und DAX entwickelt.
+Zunächst habe ich die Marketingdaten mit Python und Pandas aufbereitet und Datenqualitätsprüfungen durchgeführt. Dabei wurden unter anderem Business Rules überprüft, beispielsweise dass die Anzahl der Klicks nicht größer als die Anzahl der Impressions und die Anzahl der Conversions nicht größer als die Anzahl der Klicks sein darf.
+Anschließend habe ich in Power BI ein Star-Schema mit einer zentralen Faktentabelle und Dimensionstabellen für Datum, Marketingkanal, Region und Produkt erstellt.
+Mit DAX habe ich dynamische Kennzahlen wie Total Spend, Total Revenue, CTR, Conversion Rate, CPC, CPA und ROI erstellt.
+Abschließend habe ich ein interaktives Power-BI-Dashboard mit drei Seiten entwickelt:
+1.	Executive Overview 
+2.	Channel & Campaign Performance 
+3.	Regional & Product Performance 
+Die interaktiven Filter ermöglichen eine dynamische Analyse der Kampagnenperformance und unterstützen datenbasierte Entscheidungen zur Optimierung von Marketingkampagnen.
+________________________________________
+🛠️ Technologien
+Technologie	Verwendung
+Python	Datenaufbereitung
+Pandas	Datenbereinigung und Transformation
+NumPy	Numerische Berechnungen
+Power BI	Datenvisualisierung
+DAX	Dynamische Kennzahlen
+Excel	Quelldaten
+CSV	Datenaustausch
+________________________________________
+🎓 Gezeigte Kompetenzen
+•	Datenbereinigung 
+•	Datenqualitätsprüfung 
+•	Explorative Datenanalyse 
+•	Python 
+•	Pandas 
+•	NumPy 
+•	Power BI 
+•	DAX 
+•	Datenmodellierung 
+•	Star Schema 
+•	KPI-Entwicklung 
+•	Datenvisualisierung 
+•	Business Analysis 
+•	Marketing Analytics 
+________________________________________
+📁 Projektdateien
+•	Python-Skript zur Datenaufbereitung 
+•	Jupyter Notebook 
+•	Aufbereitete CSV-Dateien 
+•	Power-BI-Datenmodell 
+•	DAX-Kennzahlen 
+•	Interaktives Power-BI-Dashboard 
+•	Dashboard-Screenshots 
+•	Projektdokumentation 
 
-This page analyzes performance across regions and products.
+### Wichtig für GitHub
 
-Visualizations
-Revenue by Region
-Revenue by Product
-Conversions by Region
-Conversions by Product
-Product and Region Matrix
-Slicers
-Year
-Region
-Product
-Marketing Channel
+Deine Ordnerstruktur sollte so aussehen:
 
-This page helps identify high-performing regions and products.
+```text
+Marketing-Campaign-Analytics/
+│
+├── README.md
+│
+├── python/
+│   └── marketing_campaign_analysis.py
+│
+├── notebooks/
+│   └── marketing_campaign_analysis.ipynb
+│
+├── data/
+│   └── processed/
+│       ├── Fact_Marketing.csv
+│       ├── Dim_Date.csv
+│       ├── Dim_Channel.csv
+│       ├── Dim_Region.csv
+│       └── Dim_Product.csv
+│
+├── powerbi/
+│   └── Marketing_Campaign_Analytics.pbix
+│
+└── screenshots/
+    ├── page1_executive_overview.png
+    ├── page2_channel_campaign_performance.png
+    └── page3_regional_product_analysis.png
 
-📌 Key Business Questions Answered
-
-The dashboard supports analysis of:
-
-Which channel generates the highest revenue?
-Which channel has the highest CTR?
-Which campaign generates the most conversions?
-Which region performs best?
-Which product generates the most revenue?
-Which channel has the best ROI?
-Which campaigns require optimization?
-💡 Business Recommendations
-
-Based on the analysis, marketing teams can:
-
-Increase investment in high-performing marketing channels.
-Reduce spending on low-performing campaigns.
-Optimize campaigns with high CPC or CPA.
-Focus on high-converting regions.
-Promote high-performing products.
-Monitor monthly revenue trends.
-Use CTR, Conversion Rate, and ROI together to evaluate campaign effectiveness.
-🛠️ Technologies Used
-Technology	Purpose
-Python	Data preparation and validation
-Pandas	Data cleaning and transformation
-NumPy	Numerical calculations
-Power BI	Data visualization and reporting
-DAX	Dynamic KPI calculations
-Excel	Source data
-CSV	Data exchange
-🎓 Skills Demonstrated
-Data Cleaning
-Data Quality Validation
-Exploratory Data Analysis
-Python
-Pandas
-NumPy
-Data Modeling
-Star Schema
-Power BI
-DAX
-KPI Development
-Data Visualization
-Business Analysis
-Marketing Analytics
-Interactive Reporting
