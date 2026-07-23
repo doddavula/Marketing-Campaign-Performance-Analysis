@@ -72,17 +72,25 @@ Es wurden verschiedene Business Rules überprüft.
 
 Klicks dürfen nicht größer als Impressions sein
 
+Business Rule:
+
 Clicks ≤ Impressions
 
 Conversions dürfen nicht größer als Klicks sein
+
+Business Rule:
 
 Conversions ≤ Clicks
 
 Negative Ausgaben prüfen
 
+Business Rule:
+
 Spend ≥ 0
 
 Negative Umsätze prüfen
+
+Business Rule:
 
 Revenue ≥ 0
 
@@ -185,6 +193,36 @@ DIVIDE(
 
 Der ROI zeigt den erzielten Ertrag im Verhältnis zur Marketinginvestition.
 
+💵 CPC – Cost Per Click
+Formel
+
+CPC = Spend ÷ Clicks
+
+DAX
+CPC =
+DIVIDE(
+    [Total Spend],
+    [Total Clicks],
+    0
+)
+
+CPC zeigt die durchschnittlichen Kosten für einen Klick.
+
+💳 CPA – Cost Per Acquisition
+Formel
+
+CPA = Spend ÷ Conversions
+
+DAX
+CPA =
+DIVIDE(
+    [Total Spend],
+    [Total Conversions],
+    0
+)
+
+CPA zeigt die durchschnittlichen Kosten für eine Conversion.
+
 📊 Power-BI-Dashboard
 1️⃣ Executive Overview
 
@@ -205,7 +243,7 @@ Year
 Region
 Product
 Marketing Channel
-Dashboard-Screenshot
+📸 Dashboard-Screenshot
 
 2️⃣ Channel & Campaign Performance
 
@@ -217,7 +255,7 @@ Revenue by Channel
 CTR by Channel
 Conversion Rate by Channel
 Campaign Performance
-Dashboard-Screenshot
+📸 Dashboard-Screenshot
 
 3️⃣ Regional & Product Performance
 
@@ -234,7 +272,7 @@ Year
 Region
 Product
 Marketing Channel
-Dashboard-Screenshot
+📸 Dashboard-Screenshot
 
 💡 Business Insights
 
@@ -247,54 +285,3 @@ Welche Region erzielt die beste Performance?
 Welches Produkt erzielt den höchsten Umsatz?
 Welche Kanäle haben den besten ROI?
 Welche Kampagnen sollten optimiert werden?
-💼 Interview-Zusammenfassung
-
-Ich habe ein End-to-End-Projekt zur Analyse von Marketingkampagnen mit Python, Pandas, Power BI und DAX entwickelt.
-
-Zunächst habe ich die Marketingdaten mit Python und Pandas aufbereitet und Datenqualitätsprüfungen durchgeführt. Dabei wurden unter anderem Business Rules überprüft, beispielsweise dass die Anzahl der Klicks nicht größer als die Anzahl der Impressions und die Anzahl der Conversions nicht größer als die Anzahl der Klicks sein darf.
-
-Anschließend habe ich in Power BI ein Star-Schema mit einer zentralen Faktentabelle und Dimensionstabellen für Datum, Marketingkanal, Region und Produkt erstellt.
-
-Mit DAX habe ich dynamische Kennzahlen wie Total Spend, Total Revenue, CTR, Conversion Rate, CPC, CPA und ROI erstellt.
-
-Abschließend habe ich ein interaktives Power-BI-Dashboard mit drei Seiten entwickelt:
-
-Executive Overview
-Channel & Campaign Performance
-Regional & Product Performance
-
-Die interaktiven Filter ermöglichen eine dynamische Analyse der Kampagnenperformance und unterstützen datenbasierte Entscheidungen zur Optimierung von Marketingkampagnen.
-
-🛠️ Technologien
-Technologie	Verwendung
-Python	Datenaufbereitung
-Pandas	Datenbereinigung und Transformation
-NumPy	Numerische Berechnungen
-Power BI	Datenvisualisierung
-DAX	Dynamische Kennzahlen
-Excel	Quelldaten
-CSV	Datenaustausch
-🎓 Gezeigte Kompetenzen
-Datenbereinigung
-Datenqualitätsprüfung
-Explorative Datenanalyse
-Python
-Pandas
-NumPy
-Power BI
-DAX
-Datenmodellierung
-Star Schema
-KPI-Entwicklung
-Datenvisualisierung
-Business Analysis
-Marketing Analytics
-📁 Projektdateien
-Python-Skript zur Datenaufbereitung
-Jupyter Notebook
-Aufbereitete CSV-Dateien
-Power-BI-Datenmodell
-DAX-Kennzahlen
-Interaktives Power-BI-Dashboard
-Dashboard-Screenshots
-Projektdokumentation
