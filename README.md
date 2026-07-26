@@ -384,6 +384,40 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
 - Business Intelligence
 - Datenbasierte Entscheidungsunterstützung
 
+  
+##  Projektstruktur
+
+Marketing-Campaign-Performance-Analysis/
+│
+├── README.md
+│
+├── screenshots/
+│ ├── Page1.png
+│ ├── Page2.png
+│ └── Page3.png
+│
+├── 01_marketing_analysis_final.ipynb
+│
+├── Fact_Marketing.csv
+├── Dim_Date.csv
+├── Dim_Channel.csv
+├── Dim_Region.csv
+├── Dim_Product.csv
+│
+└── MarketingCampaignDashboardFinal.pbix
+
+
+##  Projektziel
+
+Das Projekt zeigt den vollständigen Workflow eines Data-Analytics-Projekts:
+
+Datenaufbereitung → Datenqualität → Datenmodellierung → DAX → Visualisierung → Business Insights
+
+## Autorin
+
+**Anitha Doddavula**
+
+
 
 
 
