@@ -267,15 +267,6 @@ Marketing Channel
 ### Page 1 – Marketing Campaign Performance Overview
 
 
-📸 Dashboard
-
-### 📸 Page 1 – Marketing Campaign Performance Overview
-
-![Page 1 Dashboard](Page1.png)
-
----
-
-
 2️⃣ Channel & Campaign Performance
 
 Die zweite Seite analysiert die Performance der Marketingkanäle.
@@ -302,11 +293,7 @@ Total Conversions
 CTR
 Conversion Rate
 ROI
-📸 Dashboard
 
-![Page2 Dashboard](Page2.png)
-
----
 
 3️⃣ Regional & Product Performance Overview
 
@@ -330,11 +317,7 @@ Produkt
 Total Revenue
 Total Conversions
 ROI
-📸 Dashboard
 
-![Page3 Dashboard](Page3.png)
-
----
 
 🔍 Interaktive Filter
 
