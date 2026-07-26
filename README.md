@@ -163,15 +163,24 @@ Product
 Das Star Schema ermöglicht eine strukturierte und flexible Analyse der Marketingperformance.
 
 🧮 DAX-Kennzahlen
+
 Total Spend
+
+
 Total Spend =
 SUM(Fact_Marketing[Spend])
+
+
 Total Revenue
 Total Revenue =
 SUM(Fact_Marketing[Revenue])
+
+
 Total Clicks
 Total Clicks =
 SUM(Fact_Marketing[Clicks])
+
+
 Total Conversions
 Total Conversions =
 SUM(Fact_Marketing[Conversions])
