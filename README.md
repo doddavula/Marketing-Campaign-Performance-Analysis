@@ -296,6 +296,8 @@ CTR
 Conversion Rate
 ROI
 📸 Dashboard – Page 2
+![Page 2 Dashboard](./screenshots/Page2.png)
+
 
 3️⃣ Regional & Product Performance Overview
 
@@ -320,6 +322,7 @@ Total Revenue
 Total Conversions
 ROI
 📸 Dashboard – Page 3
+![Page 3 Dashboard](./screenshots/Page3.png)
 
 🔍 Interaktive Filter
 
