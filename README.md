@@ -251,6 +251,8 @@ Der CPA zeigt die durchschnittlichen Kosten pro Conversion.
 
 Das Power-BI-Reporting besteht aus drei Seiten.
 
+---
+
 ## 1️⃣ Marketing Campaign Performance Overview
 
 Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
@@ -271,6 +273,8 @@ Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
 - Region
 - Marketing Channel
 
+
+---
 
 ## 2️⃣ Channel & Campaign Performance
 
@@ -304,6 +308,8 @@ Eine Performance-Tabelle ermöglicht die Analyse von:
 - ROI
 
 
+---
+
 ## 3️⃣ Regional & Product Performance Overview
 
 Die dritte Seite analysiert die Performance nach Region und Produkt.
@@ -332,6 +338,8 @@ Die Matrix ermöglicht einen detaillierten Vergleich von:
 - ROI
 
 
+---
+
 ## Interaktive Filter
 
 Die Dashboards ermöglichen eine interaktive Analyse der Daten.
@@ -345,6 +353,8 @@ Marketing Channel
 
 Die Filter ermöglichen es, die KPIs und Visualisierungen dynamisch nach verschiedenen Dimensionen zu analysieren.
 
+---
+
 ## Business Insights
 
 Das Dashboard unterstützt die Beantwortung folgender Fragen:
@@ -357,7 +367,9 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
 - Welches Produkt erzielt den höchsten Umsatz?
 - Welche Kombination aus Region und Produkt ist besonders erfolgreich?
 - Welche Marketinginvestitionen erzielen den höchsten ROI?
-## Verwendete Technologien
+---
+  
+  ## Verwendete Technologien
 
 - Technologie	Verwendung
 - Python	Datenaufbereitung
@@ -367,7 +379,9 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
 - Power BI	Datenmodellierung und Visualisierung
 - DAX	Erstellung dynamischer KPIs
 - CSV	Datenaustausch
-## Gezeigte Kompetenzen
+---
+  
+  ## Gezeigte Kompetenzen
 - Datenbereinigung
 - Datenqualitätsprüfung
 - Explorative Datenanalyse
@@ -385,6 +399,8 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
 - Datenbasierte Entscheidungsunterstützung
 
   
+---
+
 ##  Projektstruktur
 
 ```
@@ -409,11 +425,15 @@ Marketing-Campaign-Performance-Analysis/
 ```
 
 
+---
+
 ##  Projektziel
 
 Das Projekt zeigt den vollständigen Workflow eines Data-Analytics-Projekts:
 
 Datenaufbereitung → Datenqualität → Datenmodellierung → DAX → Visualisierung → Business Insights
+
+---
 
 ## Autorin
 
