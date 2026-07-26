@@ -265,7 +265,9 @@ Region
 Marketing Channel
 📸 Dashboard – Page 1
 
+
 ![Page 1 Dashboard](./screenshots/Page1.png)
+
 
 2️⃣ Channel & Campaign Performance
 
