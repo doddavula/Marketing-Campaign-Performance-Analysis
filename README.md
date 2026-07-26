@@ -44,3 +44,21 @@ Die Analyse umfasst:
 
  ---
 
+ ## Business Problem
+
+ Marketingteams investieren Budgets in verschiedene Marketingkanäle und Kampagnen.
+Die Rohdaten zeigen jedoch nicht direkt:
+
+- Welcher Marketingkanal den höchsten Umsatz erzielt
+-	Welcher Kanal die beste CTR aufweist
+-	Welche Kampagnen die meisten Conversions generieren
+-	Welche Regionen die beste Performance zeigen
+-	Welche Produkte den höchsten Umsatz erzielen
+-	Wie effizient das Marketingbudget eingesetzt wird
+-	Wie hoch der Return on Investment ist
+
+Dieses Projekt analysiert diese Fragestellungen mit Python und Power BI.
+
+---
+
+
