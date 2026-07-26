@@ -310,6 +310,8 @@ Eine Performance-Tabelle ermöglicht die Analyse von:
 - ROI
 
 
+![Page 2 Dashboard](./screenshots/Page2.png)
+
 ---
 
 ## 3️⃣ Regional & Product Performance Overview
@@ -339,6 +341,8 @@ Die Matrix ermöglicht einen detaillierten Vergleich von:
 - Total Conversions
 - ROI
 
+
+![Page 3 Dashboard](./screenshots/Page3.png)
 
 ---
 
