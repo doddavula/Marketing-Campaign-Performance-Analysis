@@ -372,22 +372,17 @@ Marketing-Campaign-Analytics/
 │
 ├── README.md
 │
-├── python/
-│   └── marketing_campaign_analysis.py
 │
 ├── notebooks/
 │   └── marketing_campaign_analysis.ipynb
 │
-├── data/
-│   └── processed/
 │       ├── Fact_Marketing.csv
 │       ├── Dim_Date.csv
 │       ├── Dim_Channel.csv
 │       ├── Dim_Region.csv
 │       └── Dim_Product.csv
 │
-├── powerbi/
-│   └── Marketing_Campaign_Analytics.pbix
+│   └── MarketingCampaignDashboardFinal.pbix
 │
 ├── Page1.png
 ├── Page2.png
