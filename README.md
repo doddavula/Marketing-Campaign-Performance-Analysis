@@ -263,9 +263,9 @@ Year
 Product
 Region
 Marketing Channel
+📸 Dashboard – Page 1
 
-### Page 1 – Marketing Campaign Performance Overview
-
+![Page 1 Dashboard](./screenshots/Page1.png)
 
 2️⃣ Channel & Campaign Performance
 
@@ -293,7 +293,7 @@ Total Conversions
 CTR
 Conversion Rate
 ROI
-
+📸 Dashboard – Page 2
 
 3️⃣ Regional & Product Performance Overview
 
@@ -317,7 +317,7 @@ Produkt
 Total Revenue
 Total Conversions
 ROI
-
+📸 Dashboard – Page 3
 
 🔍 Interaktive Filter
 
@@ -369,12 +369,16 @@ Datenvisualisierung
 Marketing Analytics
 Business Intelligence
 Datenbasierte Entscheidungsunterstützung
-## 📁 Projektstruktur
-
-```text
-Marketing-Campaign-Analytics/
+📁 Projektstruktur
+Marketing-Campaign-Performance-Analysis/
 │
 ├── README.md
+│
+├── screenshots/
+│   ├── Page1.png
+│   ├── Page2.png
+│   └── Page3.png
+│
 ├── 01_marketing_analysis_final.ipynb
 │
 ├── Fact_Marketing.csv
@@ -383,23 +387,13 @@ Marketing-Campaign-Analytics/
 ├── Dim_Region.csv
 ├── Dim_Product.csv
 │
-├── MarketingCampaignDashboardFinal.pbix
-│
-├── Page1.png
-├── Page2.png
-└── Page3.png
-
-
+└── MarketingCampaignDashboardFinal.pbix
 🚀 Projektziel
 
 Das Projekt zeigt den vollständigen Workflow eines Data-Analytics-Projekts:
 
 Datenaufbereitung → Datenqualität → Datenmodellierung → DAX → Visualisierung → Business Insights
 
-
-## 👤 Autorin
+👤 Autorin
 
 **Anitha Doddavula**
-
-
-
