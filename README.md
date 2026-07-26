@@ -367,26 +367,26 @@ Datenvisualisierung
 Marketing Analytics
 Business Intelligence
 Datenbasierte Entscheidungsunterstützung
-📁 Projektstruktur
+## 📁 Projektstruktur
+
+```text
 Marketing-Campaign-Analytics/
 │
 ├── README.md
+├── 01_marketing_analysis_final.ipynb
 │
+├── Fact_Marketing.csv
+├── Dim_Date.csv
+├── Dim_Channel.csv
+├── Dim_Region.csv
+├── Dim_Product.csv
 │
-├── notebooks/
-│   └── marketing_campaign_analysis.ipynb
-│
-│       ├── Fact_Marketing.csv
-│       ├── Dim_Date.csv
-│       ├── Dim_Channel.csv
-│       ├── Dim_Region.csv
-│       └── Dim_Product.csv
-│
-│   └── MarketingCampaignDashboardFinal.pbix
+├── MarketingCampaignDashboardFinal.pbix
 │
 ├── Page1.png
 ├── Page2.png
 └── Page3.png
+
 
 🚀 Projektziel
 
