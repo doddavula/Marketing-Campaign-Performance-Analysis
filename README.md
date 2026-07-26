@@ -359,6 +359,33 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
 - Welche Marketinginvestitionen erzielen den höchsten ROI?
 ## Verwendete Technologien
 
+- Technologie	Verwendung
+- Python	Datenaufbereitung
+- Pandas	Datenbereinigung und Transformation
+- NumPy	Numerische Berechnungen und synthetische Datengenerierung
+- Jupyter Notebook	Analyse und Entwicklung
+- Power BI	Datenmodellierung und Visualisierung
+- DAX	Erstellung dynamischer KPIs
+- CSV	Datenaustausch
+## Gezeigte Kompetenzen
+- Datenbereinigung
+- Datenqualitätsprüfung
+- Explorative Datenanalyse
+- Python
+- Pandas
+- NumPy
+- Power BI
+- DAX
+- Datenmodellierung
+- Star Schema
+- KPI-Entwicklung
+- Datenvisualisierung
+- Marketing Analytics
+- Business Intelligence
+- Datenbasierte Entscheidungsunterstützung
+
+
+
 
 
 
