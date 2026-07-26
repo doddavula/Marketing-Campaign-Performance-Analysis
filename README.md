@@ -387,6 +387,7 @@ Das Dashboard unterstützt die Beantwortung folgender Fragen:
   
 ##  Projektstruktur
 
+```
 Marketing-Campaign-Performance-Analysis/
 │
 ├── README.md
@@ -405,6 +406,7 @@ Marketing-Campaign-Performance-Analysis/
 ├── Dim_Product.csv
 │
 └── MarketingCampaignDashboardFinal.pbix
+```
 
 
 ##  Projektziel
