@@ -16,4 +16,13 @@ Die Analyse umfasst:
 -	Conversion Rate
 -	ROI
   
-Der gesamte Workflow reicht von der Datenaufbereitung mit Python bis zur Entwicklung interaktiver Power-BI-Dashboards.
+ Der gesamte Workflow reicht von der Datenaufbereitung mit Python bis zur Entwicklung interaktiver Power-BI-Dashboards.
+
+ ---
+
+ ## End-to-End-Workflow
+
+ **Rohdaten → Python / Pandas / NumPy → Datenbereinigung → Datenqualitätsprüfung → Aufbereitete CSV-Dateien → Power-BI-Datenmodell → Star Schema → DAX-Kennzahlen → Interaktive Dashboards → Business Insights**
+
+ ---
+
