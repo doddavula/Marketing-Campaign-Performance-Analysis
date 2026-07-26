@@ -23,23 +23,41 @@ Die Analyse umfasst:
  ## End-to-End-Workflow
 
  **Rohdaten**
+ 
        ↓
+       
  **Python / Pandas / NumPy**
+ 
        ↓
+       
  **Datenbereinigung**
+ 
        ↓
+       
  **Datenqualitätsprüfung**
+ 
        ↓
+       
  **Aufbereitete CSV-Dateien**
+ 
        ↓
+       
  **Power-BI-Datenmodell**
+ 
        ↓
+       
  **Star Schema**
+ 
        ↓
+       
  **DAX-Kennzahlen**
+ 
        ↓
+       
  **Interaktive Dashboards**
+ 
        ↓
+       
  **Business Insights**
 
  ---
