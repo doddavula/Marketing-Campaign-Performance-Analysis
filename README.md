@@ -266,7 +266,7 @@ Marketing Channel
 
 ### Page 1 – Marketing Campaign Performance Overview
 
-![Page 1 Dashboard](./Page1.png)
+![Page 1 Dashboard](Page1.png)
 
 ---
 
