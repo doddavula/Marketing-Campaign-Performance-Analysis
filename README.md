@@ -94,7 +94,7 @@ Revenue
 
 Die Daten wurden so vorbereitet, dass sie realistische Marketingkennzahlen und Business-Szenarien abbilden.
 
-###✅ Datenqualitätsprüfung###
+✅ Datenqualitätsprüfung
 
 Vor der Analyse wurden verschiedene Business Rules überprüft.
 
@@ -124,7 +124,7 @@ Revenue ≥ 0
 
 Diese Prüfungen stellen sicher, dass die Daten logisch und analytisch verwendbar sind.
 
-###⭐ Power-BI-Datenmodell###
+⭐ Power-BI-Datenmodell
 
 Das Datenmodell wurde als Star Schema aufgebaut.
 
@@ -155,7 +155,7 @@ Product
 
 Das Star Schema ermöglicht eine strukturierte und flexible Analyse der Marketingperformance.
 
-###🧮 DAX-Kennzahlen###
+🧮 DAX-Kennzahlen
 Total Spend
 Total Spend =
 SUM(Fact_Marketing[Spend])
@@ -244,7 +244,7 @@ Der CPA zeigt die durchschnittlichen Kosten pro Conversion.
 
 Das Power-BI-Reporting besteht aus drei Seiten.
 
-###1️⃣ Marketing Campaign Performance Overview###
+1️⃣ Marketing Campaign Performance Overview
 
 Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
 
@@ -265,7 +265,7 @@ Region
 Marketing Channel
 📸 Dashboard
 
-###2️⃣ Channel & Campaign Performance###
+2️⃣ Channel & Campaign Performance
 
 Die zweite Seite analysiert die Performance der Marketingkanäle.
 
@@ -293,7 +293,7 @@ Conversion Rate
 ROI
 📸 Dashboard
 
-###3️⃣ Regional & Product Performance Overview###
+3️⃣ Regional & Product Performance Overview
 
 Die dritte Seite analysiert die Performance nach Region und Produkt.
 
@@ -317,7 +317,7 @@ Total Conversions
 ROI
 📸 Dashboard
 
-###🔍 Interaktive Filter###
+🔍 Interaktive Filter
 
 Die Dashboards ermöglichen eine interaktive Analyse der Daten.
 
@@ -330,7 +330,7 @@ Marketing Channel
 
 Die Filter ermöglichen es, die KPIs und Visualisierungen dynamisch nach verschiedenen Dimensionen zu analysieren.
 
-###💡 Business Insights###
+💡 Business Insights
 
 Das Dashboard unterstützt die Beantwortung folgender Fragen:
 
@@ -342,7 +342,7 @@ Welche Region generiert die meisten Conversions?
 Welches Produkt erzielt den höchsten Umsatz?
 Welche Kombination aus Region und Produkt ist besonders erfolgreich?
 Welche Marketinginvestitionen erzielen den höchsten ROI?
-###🛠️ Verwendete Technologien###
+🛠️ Verwendete Technologien
 Technologie	Verwendung
 Python	Datenaufbereitung
 Pandas	Datenbereinigung und Transformation
@@ -351,7 +351,7 @@ Jupyter Notebook	Analyse und Entwicklung
 Power BI	Datenmodellierung und Visualisierung
 DAX	Erstellung dynamischer KPIs
 CSV	Datenaustausch
-###🎓 Gezeigte Kompetenzen###
+🎓 Gezeigte Kompetenzen
 Datenbereinigung
 Datenqualitätsprüfung
 Explorative Datenanalyse
@@ -367,7 +367,7 @@ Datenvisualisierung
 Marketing Analytics
 Business Intelligence
 Datenbasierte Entscheidungsunterstützung
-###📁 Projektstruktur###
+📁 Projektstruktur
 Marketing-Campaign-Analytics/
 │
 ├── README.md
@@ -393,7 +393,7 @@ Marketing-Campaign-Analytics/
 ├── Page2.png
 └── Page3.png
 
-###🚀 Projektziel###
+🚀 Projektziel
 
 Das Projekt zeigt den vollständigen Workflow eines Data-Analytics-Projekts:
 
