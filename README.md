@@ -269,9 +269,12 @@ Marketing Channel
 
 📸 Dashboard
 
-![Page1 Dashboard](Page1.png)
+### 📸 Page 1 – Marketing Campaign Performance Overview
+
+![Page 1 Dashboard](Page1.png)
 
 ---
+
 
 2️⃣ Channel & Campaign Performance
 
