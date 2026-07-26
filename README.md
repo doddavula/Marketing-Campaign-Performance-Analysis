@@ -273,6 +273,10 @@ Marketing Channel
 
 📸 Dashboard
 
+![Page1 Dashboard](Page1.png)
+
+---
+
 2️⃣ Channel & Campaign Performance
 
 Die zweite Seite analysiert die Performance der Marketingkanäle.
