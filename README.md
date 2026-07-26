@@ -1,17 +1,26 @@
-📊 Marketing Campaign Analytics
+Marketing Campaign Analytics
 📌 Projektübersicht
 
 Dieses Projekt ist eine End-to-End-Analyse von Marketingkampagnendaten mit Python, Pandas, NumPy, Power BI und DAX.
 
-Ziel des Projekts ist die Analyse der Kampagnenperformance nach:
+Ziel des Projekts ist es, die Performance von Marketingkampagnen zu analysieren und datenbasierte Erkenntnisse für die Optimierung von Marketingmaßnahmen zu gewinnen.
 
-Marketingkanal
-Region
-Produkt
-Kampagne
-Zeitraum
+Die Analyse umfasst unter anderem:
 
-Der gesamte Analyseprozess umfasst die Datenaufbereitung in Python, die Datenqualitätsprüfung, die Modellierung in Power BI, die Erstellung dynamischer DAX-Kennzahlen und die Entwicklung interaktiver Dashboards.
+Marketingkanäle
+Regionen
+Produkte
+Zeitperioden
+Impressions
+Klicks
+Conversions
+Marketingausgaben
+Umsatz
+CTR
+Conversion Rate
+ROI
+
+Der gesamte Workflow reicht von der Datenaufbereitung mit Python bis zur Entwicklung interaktiver Power-BI-Dashboards.
 
 🔄 End-to-End-Workflow
 
@@ -27,17 +36,19 @@ Aufbereitete CSV-Dateien
 ↓
 Power-BI-Datenmodell
 ↓
-Star-Schema
+Star Schema
 ↓
 DAX-Kennzahlen
 ↓
-Interaktives Dashboard
+Interaktive Dashboards
 ↓
 Business Insights
 
 🎯 Business Problem
 
-Marketingteams investieren Budgets in verschiedene Kampagnen und Marketingkanäle. Rohdaten zeigen jedoch nicht immer direkt:
+Marketingteams investieren Budgets in verschiedene Marketingkanäle und Kampagnen.
+
+Die Rohdaten zeigen jedoch nicht direkt:
 
 Welcher Marketingkanal den höchsten Umsatz erzielt
 Welcher Kanal die beste CTR aufweist
@@ -47,64 +58,84 @@ Welche Produkte den höchsten Umsatz erzielen
 Wie effizient das Marketingbudget eingesetzt wird
 Wie hoch der Return on Investment ist
 
-Dieses Projekt beantwortet diese Fragen mithilfe von Datenanalyse und Business Intelligence.
+Dieses Projekt analysiert diese Fragestellungen mit Python und Power BI.
 
-🐍 Python-Datenaufbereitung
+🐍 Datenaufbereitung mit Python
 
-Python und Pandas wurden verwendet für:
+Die Daten wurden mit Python und Pandas aufbereitet und für die Analyse vorbereitet.
 
+Durchgeführte Schritte
 Einlesen der Rohdaten
-Untersuchung des Datensatzes
+Untersuchung der Datenstruktur
 Prüfung der Datentypen
-Behandlung fehlender Werte
+Überprüfung fehlender Werte
 Entfernung von Duplikaten
 Bereinigung von Textfeldern
+Erstellung und Prüfung berechneter Kennzahlen
 Datenqualitätsprüfung
-Vorbereitung der Daten für Power BI
+Vorbereitung der CSV-Dateien für Power BI
 Verwendete Technologien
 Python
 Pandas
 NumPy
 Jupyter Notebook
+📊 Datensatz
+
+Für das Projekt wurde ein synthetischer Marketingdatensatz mit ungefähr 100.000 Datensätzen verwendet.
+
+Der Datensatz enthält unter anderem folgende Informationen:
+
+Datum
+Marketingkanal
+Region
+Produkt
+Impressions
+Clicks
+Conversions
+Spend
+Revenue
+
+Die Daten wurden so vorbereitet, dass sie realistische Marketingkennzahlen und Business-Szenarien abbilden.
+
 ✅ Datenqualitätsprüfung
 
-Es wurden verschiedene Business Rules überprüft.
+Vor der Analyse wurden verschiedene Business Rules überprüft.
 
-Klicks dürfen nicht größer als Impressions sein
+Clicks dürfen nicht größer als Impressions sein
 
 Business Rule:
 
 Clicks ≤ Impressions
 
-Conversions dürfen nicht größer als Klicks sein
+Conversions dürfen nicht größer als Clicks sein
 
 Business Rule:
 
 Conversions ≤ Clicks
 
-Negative Ausgaben prüfen
+Marketingausgaben dürfen nicht negativ sein
 
 Business Rule:
 
 Spend ≥ 0
 
-Negative Umsätze prüfen
+Umsatz darf nicht negativ sein
 
 Business Rule:
 
 Revenue ≥ 0
+
+Diese Prüfungen stellen sicher, dass die Daten logisch und analytisch verwendbar sind.
 
 ⭐ Power-BI-Datenmodell
 
 Das Datenmodell wurde als Star Schema aufgebaut.
 
 Faktentabelle
-
 Fact_Marketing
 
-Enthält messbare Marketingkennzahlen:
+Die zentrale Faktentabelle enthält die messbaren Marketingkennzahlen:
 
-Campaign_ID
 Date
 Impressions
 Clicks
@@ -112,43 +143,35 @@ Conversions
 Spend
 Revenue
 Dimensionstabellen
-
 Dim_Date
-
 Date
 Year
 Month
 Month Name
 Year Month
-
 Dim_Channel
-
 Marketing Channel
-
 Dim_Region
-
 Region
-
 Dim_Product
-
 Product
+
+Das Star Schema ermöglicht eine strukturierte und flexible Analyse der Marketingperformance.
+
 🧮 DAX-Kennzahlen
-Total Impressions
-Total Impressions =
-SUM(Fact_Marketing[Impressions])
-Total Clicks
-Total Clicks =
-SUM(Fact_Marketing[Clicks])
-Total Conversions
-Total Conversions =
-SUM(Fact_Marketing[Conversions])
 Total Spend
 Total Spend =
 SUM(Fact_Marketing[Spend])
 Total Revenue
 Total Revenue =
 SUM(Fact_Marketing[Revenue])
-📈 CTR – Click-Through-Rate
+Total Clicks
+Total Clicks =
+SUM(Fact_Marketing[Clicks])
+Total Conversions
+Total Conversions =
+SUM(Fact_Marketing[Conversions])
+📈 CTR – Click-Through Rate
 Formel
 
 CTR = Clicks ÷ Impressions
@@ -161,7 +184,7 @@ DIVIDE(
     0
 )
 
-Die CTR zeigt den prozentualen Anteil der Impressions, die zu einem Klick geführt haben.
+Die CTR zeigt den Anteil der Impressions, die zu einem Klick geführt haben.
 
 🔄 Conversion Rate
 Formel
@@ -181,7 +204,7 @@ Die Conversion Rate zeigt, wie viele Klicks zu einer Conversion geführt haben.
 💰 ROI – Return on Investment
 Formel
 
-ROI = (Revenue - Spend) ÷ Spend
+ROI = (Revenue − Spend) ÷ Spend
 
 DAX
 ROI =
@@ -191,9 +214,11 @@ DIVIDE(
     0
 )
 
-Der ROI zeigt den erzielten Ertrag im Verhältnis zur Marketinginvestition.
+Der ROI zeigt die Effizienz der Marketinginvestitionen.
 
-💵 CPC – Cost Per Click
+Die Kennzahl wird im Dashboard als Prozentwert dargestellt.
+
+💵 CPC – Cost per Click
 Formel
 
 CPC = Spend ÷ Clicks
@@ -206,9 +231,9 @@ DIVIDE(
     0
 )
 
-CPC zeigt die durchschnittlichen Kosten für einen Klick.
+Der CPC zeigt die durchschnittlichen Kosten pro Klick.
 
-💳 CPA – Cost Per Acquisition
+💳 CPA – Cost per Acquisition
 Formel
 
 CPA = Spend ÷ Conversions
@@ -221,10 +246,13 @@ DIVIDE(
     0
 )
 
-CPA zeigt die durchschnittlichen Kosten für eine Conversion.
+Der CPA zeigt die durchschnittlichen Kosten pro Conversion.
 
 📊 Power-BI-Dashboard
-1️⃣ Executive Overview
+
+Das Power-BI-Reporting besteht aus drei Seiten.
+
+1️⃣ Marketing Campaign Performance Overview
 
 Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
 
@@ -236,52 +264,142 @@ CTR
 ROI
 Visualisierungen
 Monthly Revenue Trend
-Revenue by Marketing Channel
+Total Revenue by Marketing Channel
 Conversions by Region
 Filter
 Year
-Region
 Product
+Region
 Marketing Channel
-📸 Dashboard-Screenshot
+📸 Dashboard
 
 2️⃣ Channel & Campaign Performance
 
-Diese Seite analysiert die Performance nach Marketingkanal und Kampagne.
+Die zweite Seite analysiert die Performance der Marketingkanäle.
 
-Analysen
+KPIs
+Total Spend
+Total Revenue
+Total Clicks
+Total Conversions
+CTR
+Visualisierungen
 Marketing Spend by Channel
-Revenue by Channel
-CTR by Channel
-Conversion Rate by Channel
-Campaign Performance
-📸 Dashboard-Screenshot
+Total Revenue by Marketing Channel
+CTR by Marketing Channel
+Conversion Rate by Marketing Channel
+Zusätzliche Analyse
 
-3️⃣ Regional & Product Performance
+Eine Performance-Tabelle ermöglicht die Analyse von:
 
-Diese Seite analysiert die Performance nach Region und Produkt.
+Total Spend
+Total Revenue
+Total Clicks
+Total Conversions
+CTR
+Conversion Rate
+ROI
+📸 Dashboard
 
+3️⃣ Regional & Product Performance Overview
+
+Die dritte Seite analysiert die Performance nach Region und Produkt.
+
+KPIs
+Total Revenue
+Total Conversions
+ROI
 Visualisierungen
 Revenue by Region
 Revenue by Product
 Conversions by Region
 Conversions by Product
-Product and Region Matrix
-Filter
+Performance Matrix
+
+Die Matrix ermöglicht einen detaillierten Vergleich von:
+
+Region
+Produkt
+Total Revenue
+Total Conversions
+ROI
+📸 Dashboard
+
+🔍 Interaktive Filter
+
+Die Dashboards ermöglichen eine interaktive Analyse der Daten.
+
+Verwendete Filter:
+
 Year
 Region
 Product
 Marketing Channel
-📸 Dashboard-Screenshot
+
+Die Filter ermöglichen es, die KPIs und Visualisierungen dynamisch nach verschiedenen Dimensionen zu analysieren.
 
 💡 Business Insights
 
 Das Dashboard unterstützt die Beantwortung folgender Fragen:
 
 Welcher Marketingkanal erzielt den höchsten Umsatz?
+Welcher Kanal erzielt die höchsten Marketingausgaben?
 Welcher Kanal hat die beste CTR?
-Welche Kampagne generiert die meisten Conversions?
-Welche Region erzielt die beste Performance?
+Welcher Kanal erzielt die beste Conversion Rate?
+Welche Region generiert die meisten Conversions?
 Welches Produkt erzielt den höchsten Umsatz?
-Welche Kanäle haben den besten ROI?
-Welche Kampagnen sollten optimiert werden?
+Welche Kombination aus Region und Produkt ist besonders erfolgreich?
+Welche Marketinginvestitionen erzielen den höchsten ROI?
+🛠️ Verwendete Technologien
+Technologie	Verwendung
+Python	Datenaufbereitung
+Pandas	Datenbereinigung und Transformation
+NumPy	Numerische Berechnungen
+Jupyter Notebook	Analyse und Entwicklung
+Power BI	Datenmodellierung und Visualisierung
+DAX	Erstellung dynamischer KPIs
+CSV	Datenaustausch
+🎓 Gezeigte Kompetenzen
+Datenbereinigung
+Datenqualitätsprüfung
+Explorative Datenanalyse
+Python
+Pandas
+NumPy
+Power BI
+DAX
+Datenmodellierung
+Star Schema
+KPI-Entwicklung
+Datenvisualisierung
+Marketing Analytics
+Business Intelligence
+Datenbasierte Entscheidungsunterstützung
+📁 Projektstruktur
+
+Eine mögliche Projektstruktur:
+
+Marketing-Campaign-Analytics/
+│
+├── README.md
+│
+├── python/
+│   └── marketing_campaign_analysis.py
+│
+├── notebooks/
+│   └── marketing_campaign_analysis.ipynb
+│
+├── data/
+│   └── processed/
+│       ├── Fact_Marketing.csv
+│       ├── Dim_Date.csv
+│       ├── Dim_Channel.csv
+│       ├── Dim_Region.csv
+│       └── Dim_Product.csv
+│
+├── powerbi/
+│   └── Marketing_Campaign_Analytics.pbix
+│
+├── Page1.png
+├── Page2.png
+└── Page3.png
