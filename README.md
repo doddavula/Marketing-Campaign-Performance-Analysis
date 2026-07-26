@@ -255,21 +255,21 @@ Das Power-BI-Reporting besteht aus drei Seiten.
 
 Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
 
-KPIs
-Total Spend
-Total Revenue
-Total Conversions
-CTR
-ROI
-Visualisierungen
-Monthly Revenue Trend
-Total Revenue by Marketing Channel
-Conversions by Region
-Filter
-Year
-Product
-Region
-Marketing Channel
+- KPIs
+- Total Spend
+- Total Revenue
+- Total Conversions
+- CTR
+- ROI
+- Visualisierungen
+- Monthly Revenue Trend
+- Total Revenue by Marketing Channel
+- Conversions by Region
+### Filter
+- Year
+- Product
+- Region
+- Marketing Channel
 
 
 ## 2️⃣ Channel & Campaign Performance
@@ -349,14 +349,14 @@ Die Filter ermöglichen es, die KPIs und Visualisierungen dynamisch nach verschi
 
 Das Dashboard unterstützt die Beantwortung folgender Fragen:
 
-Welcher Marketingkanal erzielt den höchsten Umsatz?
-Welcher Kanal erzielt die höchsten Marketingausgaben?
-Welcher Kanal hat die beste CTR?
-Welcher Kanal erzielt die beste Conversion Rate?
-Welche Region generiert die meisten Conversions?
-Welches Produkt erzielt den höchsten Umsatz?
-Welche Kombination aus Region und Produkt ist besonders erfolgreich?
-Welche Marketinginvestitionen erzielen den höchsten ROI?
+- Welcher Marketingkanal erzielt den höchsten Umsatz?
+- Welcher Kanal erzielt die höchsten Marketingausgaben?
+- Welcher Kanal hat die beste CTR?
+- Welcher Kanal erzielt die beste Conversion Rate?
+- Welche Region generiert die meisten Conversions?
+- Welches Produkt erzielt den höchsten Umsatz?
+- Welche Kombination aus Region und Produkt ist besonders erfolgreich?
+- Welche Marketinginvestitionen erzielen den höchsten ROI?
 ## Verwendete Technologien
 Technologie	Verwendung
 Python	Datenaufbereitung
