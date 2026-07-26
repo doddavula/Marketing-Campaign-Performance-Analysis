@@ -274,6 +274,8 @@ Die erste Seite bietet einen Überblick über die gesamte Marketingperformance.
 - Marketing Channel
 
 
+![Page 1 Dashboard](./screenshots/Page1.png)
+
 ---
 
 ## 2️⃣ Channel & Campaign Performance
