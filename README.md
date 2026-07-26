@@ -172,18 +172,26 @@ SUM(Fact_Marketing[Spend])
 
 
 Total Revenue
+
+
 Total Revenue =
 SUM(Fact_Marketing[Revenue])
 
 
 Total Clicks
+
+
 Total Clicks =
 SUM(Fact_Marketing[Clicks])
 
 
 Total Conversions
+
+
 Total Conversions =
 SUM(Fact_Marketing[Conversions])
+
+
 📈 CTR – Click-Through Rate
 Formel
 
