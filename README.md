@@ -15,4 +15,5 @@ Die Analyse umfasst:
 - CTR
 -	Conversion Rate
 -	ROI
+  
 Der gesamte Workflow reicht von der Datenaufbereitung mit Python bis zur Entwicklung interaktiver Power-BI-Dashboards.
