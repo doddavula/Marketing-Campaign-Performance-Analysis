@@ -265,12 +265,6 @@ Region
 Marketing Channel
 
 
-### 📸 Screenshot – Page 1
-
-![Page 1 Dashboard](./screenshots/Page1.png)
-
----
-
 ## 2️⃣ Channel & Campaign Performance
 
 Die zweite Seite analysiert die Performance der Marketingkanäle.
@@ -302,11 +296,6 @@ Eine Performance-Tabelle ermöglicht die Analyse von:
 - Conversion Rate
 - ROI
 
-### 📸 Screenshot – Page 2
-
-![Page 2 Dashboard](./screenshots/Page2.png)
-
----
 
 ## 3️⃣ Regional & Product Performance Overview
 
@@ -335,69 +324,6 @@ Die Matrix ermöglicht einen detaillierten Vergleich von:
 - Total Conversions
 - ROI
 
-### 📸 Screenshot – Page 3
-
-![Page 3 Dashboard](./screenshots/Page3.png)
-📸 Dashboard – Page 1
-
-
-![Page 1 Dashboard](./screenshots/Page1.png)
-
-
-2️⃣ Channel & Campaign Performance
-
-Die zweite Seite analysiert die Performance der Marketingkanäle.
-
-KPIs
-Total Spend
-Total Revenue
-Total Clicks
-Total Conversions
-CTR
-Visualisierungen
-Marketing Spend by Channel
-Total Revenue by Marketing Channel
-CTR by Marketing Channel
-Conversion Rate by Marketing Channel
-Zusätzliche Analyse
-
-Eine Performance-Tabelle ermöglicht die Analyse von:
-
-Total Spend
-Total Revenue
-Total Clicks
-Total Conversions
-CTR
-Conversion Rate
-ROI
-📸 Dashboard – Page 2
-![Page 2 Dashboard](./screenshots/Page2.png)
-
-
-3️⃣ Regional & Product Performance Overview
-
-Die dritte Seite analysiert die Performance nach Region und Produkt.
-
-KPIs
-Total Revenue
-Total Conversions
-ROI
-Visualisierungen
-Revenue by Region
-Revenue by Product
-Conversions by Region
-Conversions by Product
-Performance Matrix
-
-Die Matrix ermöglicht einen detaillierten Vergleich von:
-
-Region
-Produkt
-Total Revenue
-Total Conversions
-ROI
-📸 Dashboard – Page 3
-![Page 3 Dashboard](./screenshots/Page3.png)
 
 🔍 Interaktive Filter
 
