@@ -61,4 +61,30 @@ Dieses Projekt analysiert diese Fragestellungen mit Python und Power BI.
 
 ---
 
+## Datenaufbereitung mit Python
+
+Die Daten wurden mit Python und Pandas aufbereitet und für die Analyse vorbereitet.
+Durchgeführte Schritte
+
+-	Einlesen der Rohdaten
+-	Untersuchung der Datenstruktur
+-	Prüfung der Datentypen
+-	Überprüfung fehlender Werte
+-	Entfernung von Duplikaten
+-	Bereinigung von Textfeldern
+-	Erstellung und Prüfung berechneter Kennzahlen
+-	Datenqualitätsprüfung
+-	Vorbereitung der CSV-Dateien für Power BI
+
+NumPy
+NumPy wurde für numerische Berechnungen und die Generierung realistischer synthetischer Marketingdaten verwendet.
+Beispiel:
+df["Revenue"] = df["Spend"] * np.random.uniform(2.0, 5.0)
+
+Dadurch wird für jede Zeile ein realistischer Umsatzmultiplikator zwischen 2,0 und 5,0 generiert.
+
+## Datensatz
+
+
+
 
